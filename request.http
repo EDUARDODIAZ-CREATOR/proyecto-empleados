@@ -1,0 +1,28 @@
+### Crear empleado
+POST http://localhost:3000/api/empleados
+Content-Type: application/json
+
+{
+  "nombre": "Eduardo Lujan",
+  "puesto": "Desarrollador",
+  "salario": 15000,
+  "fechaInicio": "2024-11-08"
+}
+
+### Obtener todos
+GET http://localhost:3000/api/empleados
+
+### Obtener uno por ID
+GET http://localhost:3000/api/empleados/690f7fb7ef967f4011a84cfd
+
+### Actualizar
+PUT http://localhost:3000/api/empleados/ID_AQUI
+Content-Type: application/json
+
+{
+  "puesto": "Diseñadora UI/UX",
+  "salario": 13500
+}
+
+### Eliminar
+DELETE http://localhost:3000/api/empleados/ID_AQUI
